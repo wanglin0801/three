@@ -1,22 +1,36 @@
 package com.besttone.entity;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
-@Table(name = "t_user")
+@Table(name = "t_users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private Long id;
-   private String name;
-   private String sex;
-   private Integer age;
-   @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-   private Date createDate;
+    @GeneratedValue
+    private Long id;
+
+    @Column(nullable = false)
+    private String name;
+
+    @Column(nullable = false)
+    private String state;
+
+    // ... additional members, often include @OneToMany mappings
+
+    public User() {
+        // no-args constructor required by JPA spec
+        // this one is protected since it shouldn't be used directly
+    }
+
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getState() {
+        return this.state;
+    }
 
     public Long getId() {
         return id;
@@ -26,36 +40,12 @@ public class User {
         this.id = id;
     }
 
-
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getSex() {
-        return sex;
+    public void setState(String state) {
+        this.state = state;
     }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
+// ... etc
 }

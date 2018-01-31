@@ -2,17 +2,18 @@ server:
   port: 8081
   tomcat:
     uri-encoding: UTF-8
-spring:
   datasource:
-    url: jdbc:mysql://172.30.17.28:3306/db_114bmo2o
-    data-username: root
-    data-password: 123456
-  jpa:MYSQL
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.222.29:3306/eas?characterEncoding=utf-8&useUnicode=true
+    username: root
+    password: 123456
   jpa:
-    show-sql: true
-
     hibernate:
       ddl-auto: update
-      naming:
-        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    show-sql: false
 
+ #Hibernate ddl auto (validate|create|create-drop|update)
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
