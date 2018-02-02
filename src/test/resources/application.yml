@@ -4,13 +4,16 @@ server:
     uri-encoding: UTF-8
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.30.17.28:3306/eas?characterEncoding=utf-8&useUnicode=true
+    url: jdbc:mysql://192.168.222.29:3306/eas?characterEncoding=utf-8&useUnicode=true
     username: root
     password: 123456
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: false
 
  #Hibernate ddl auto (validate|create|create-drop|update)
 
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
