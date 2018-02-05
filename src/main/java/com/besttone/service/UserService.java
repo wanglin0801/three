@@ -1,7 +1,7 @@
 package com.besttone.service;
 
-import com.besttone.entity.User;
+import com.besttone.entity.Customer;
 
  public interface UserService {
-    int save(User user);
+    int save(Customer user);
 }

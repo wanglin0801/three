@@ -2,6 +2,8 @@ server:
   port: 8081
   tomcat:
     uri-encoding: UTF-8
+
+spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.222.29:3306/eas?characterEncoding=utf-8&useUnicode=true

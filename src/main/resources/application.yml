@@ -2,6 +2,8 @@ server:
   port: 8081
   tomcat:
     uri-encoding: UTF-8
+
+spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://172.30.17.28:3306/eas?characterEncoding=utf-8&useUnicode=true
@@ -10,7 +12,10 @@ server:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
-
- #Hibernate ddl auto (validate|create|create-drop|update)
-
+    show-sql: false
+#
+# #Hibernate ddl auto (validate|create|create-drop|update)
+#
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect

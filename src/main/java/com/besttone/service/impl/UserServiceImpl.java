@@ -1,7 +1,7 @@
 package com.besttone.service.impl;
 
-import com.besttone.entity.User;
-import com.besttone.repository.UserRepository;
+import com.besttone.entity.Customer;
+import com.besttone.repository.CustomerRepository;
 import com.besttone.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,12 +10,10 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService{
 
     @Autowired
-    private UserRepository userRepository;
+    private CustomerRepository customerRepository;
     @Override
-    public int save(User user) {
-        user.setName("w1");
-        user.setState("x");
-        userRepository.save(user);
+    public int save(Customer user) {
+        //userRepository.save(user);
         return 0;
     }
 }
