@@ -1,6 +1,6 @@
-package com.besttone.repository;
+package cn.com.besttone.repository;
 
-import com.besttone.entity.Customer;
+import cn.com.besttone.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

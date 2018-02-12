@@ -13,6 +13,17 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+  application:
+    name: order_relation_service
+port
+
+
 security:
   basic:
     enabled: false

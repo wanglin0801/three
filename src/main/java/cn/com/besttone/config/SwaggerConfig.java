@@ -1,4 +1,4 @@
-package com.besttone.config;
+package cn.com.besttone.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +20,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.saytime.web"))
+                .apis(RequestHandlerSelectors.basePackage("cn.com.besttone.controller.api"))
                 .paths(PathSelectors.any())
                 .build();
     }

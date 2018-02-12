@@ -1,6 +1,6 @@
-package com.besttone.repository;
+package cn.com.besttone.repository;
 
-import com.besttone.entity.Customer;
+import cn.com.besttone.entity.Customer;
 import groovy.util.logging.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,11 +8,8 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 
 @Slf4j

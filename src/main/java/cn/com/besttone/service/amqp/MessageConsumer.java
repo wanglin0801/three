@@ -1,7 +1,7 @@
-package com.besttone.service.amqp;
+package cn.com.besttone.service.amqp;
 
-import com.besttone.config.AmqpConfig;
-import com.besttone.entity.Customer;
+import cn.com.besttone.config.AmqpConfig;
+import cn.com.besttone.entity.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -12,8 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 消息队列消费者
- * 从RabbitMQ取短信对象，调用能力部接口发送短信
- * 
+ *
  * @author
  *
  */

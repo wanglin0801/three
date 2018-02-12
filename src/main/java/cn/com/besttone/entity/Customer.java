@@ -1,4 +1,4 @@
-package com.besttone.entity;
+package cn.com.besttone.entity;
 
 import javax.persistence.*;
 import java.util.Date;
